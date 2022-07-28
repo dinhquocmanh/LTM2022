@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is JAX-WS RI 2.2-hudson-740-. --><xs:schema xmlns:tns="http://medianews.vn/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://medianews.vn/">
+
+<xs:element name="getProduct" type="tns:getProduct" />
+
+<xs:element name="getProductResponse" type="tns:getProductResponse" />
+
+<xs:element name="order" type="tns:order" />
+
+<xs:element name="orderResponse" type="tns:orderResponse" />
+
+<xs:complexType name="order">
+<xs:sequence>
+<xs:element name="product" type="tns:product" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="product">
+<xs:sequence>
+<xs:element name="code" type="xs:string" minOccurs="0" />
+<xs:element name="discount" type="xs:int" />
+<xs:element name="discountCode" type="xs:string" minOccurs="0" />
+<xs:element name="id" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="orderResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getProduct">
+<xs:sequence>
+<xs:element name="studentCode" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getProductResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:product" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

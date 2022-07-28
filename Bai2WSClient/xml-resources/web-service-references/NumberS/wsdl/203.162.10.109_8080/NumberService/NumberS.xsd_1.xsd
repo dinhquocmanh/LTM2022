@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is JAX-WS RI 2.2-hudson-740-. --><xs:schema xmlns:tns="http://medianews.vn/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://medianews.vn/">
+
+<xs:element name="getNumber" type="tns:getNumber" />
+
+<xs:element name="getNumberResponse" type="tns:getNumberResponse" />
+
+<xs:element name="greatestNumber" type="tns:greatestNumber" />
+
+<xs:element name="greatestNumberResponse" type="tns:greatestNumberResponse" />
+
+<xs:complexType name="greatestNumber">
+<xs:sequence>
+<xs:element name="reqId" type="xs:int" />
+<xs:element name="greatestNumber" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="greatestNumberResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getNumber">
+<xs:sequence>
+<xs:element name="studentCode" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getNumberResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
