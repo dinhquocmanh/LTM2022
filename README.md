@@ -11,7 +11,7 @@ Các bạn lưu ý chuẩn bị và đến đúng giờ để thi, các trườn
 Br,
 
 # Files:
-TCP_800: DataInputStream/DataOuputStream
-TCP_912: BufferedReader/BufferedWritter
-Bai3_UDP: ObjectOutputStream/ObjectInputStream
-Snippets: UCLN, BCNN, isPrime, SecondLargest, ConvertStringToArray
+- TCP_800: DataInputStream/DataOuputStream
+- TCP_912: BufferedReader/BufferedWritter
+- Bai3_UDP: ObjectOutputStream/ObjectInputStream
+- Snippets: UCLN, BCNN, isPrime, SecondLargest, ConvertStringToArray
